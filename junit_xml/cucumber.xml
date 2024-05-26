@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="7.022" tests="10" skipped="0" failures="0" errors="0">
-<testcase classname="Reqres Delete Api to delete the User feature" name="reqres delet api to delete the user scenario" time="2.612">
+<testsuite name="Cucumber" time="5.485" tests="10" skipped="0" failures="0" errors="0">
+<testcase classname="Reqres Delete Api to delete the User feature" name="reqres delet api to delete the user scenario" time="1.68">
 <system-out><![CDATA[
 Given provide valid endpoint to delete the user.............................passed
 When I send the request to the server to delete the user....................passed
 Then I validate the delete user response status code........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="GetAPI Functionality" name="Get Api to list all the users" time="0.203">
+<testcase classname="GetAPI Functionality" name="Get Api to list all the users" time="0.141">
 <system-out><![CDATA[
 Given provide valid endpoint to fetch all users.............................passed
 When send the request to the server.........................................passed
 Then I validate the response statuscode 200.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="GetAPI Functionality" name="getApi to search with different page numbers using scenario outline - Example #1.1" time="1.199">
+<testcase classname="GetAPI Functionality" name="getApi to search with different page numbers using scenario outline - Example #1.1" time="0.972">
 <system-out><![CDATA[
 Given provide valid endpoint to fetch all users.............................passed
 When send the request to the server with page number as 1...................passed
@@ -22,7 +22,7 @@ Then I verify the response statusCode 200...................................pass
 And I verify the first user record having email as "george.bluth@reqres.in".passed
 ]]></system-out>
 </testcase>
-<testcase classname="GetAPI Functionality" name="getApi to search with different page numbers using scenario outline - Example #1.2" time="0.166">
+<testcase classname="GetAPI Functionality" name="getApi to search with different page numbers using scenario outline - Example #1.2" time="0.159">
 <system-out><![CDATA[
 Given provide valid endpoint to fetch all users.............................passed
 When send the request to the server with page number as 2...................passed
@@ -30,7 +30,7 @@ Then I verify the response statusCode 200...................................pass
 And I verify the first user record having email as "michael.lawson@reqres.in".passed
 ]]></system-out>
 </testcase>
-<testcase classname="GetAPI Functionality" name="Get Api to list single user" time="0.205">
+<testcase classname="GetAPI Functionality" name="Get Api to list single user" time="0.15">
 <system-out><![CDATA[
 Given provide valid endpoint to fetch single user...........................passed
 When send the request to the server to fetch single user....................passed
@@ -38,14 +38,14 @@ Then I validate the single user response statuscode 200.....................pass
 And I verify the response body fields.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="GetAPI Functionality" name="Get Api for single user not found" time="0.437">
+<testcase classname="GetAPI Functionality" name="Get Api for single user not found" time="0.438">
 <system-out><![CDATA[
 Given provide valid endpoint to fetch single user not found.................passed
 When send the request to the server to fetch single user not found..........passed
 Then I validate the single user not found response statuscode...............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create user scenario" time="0.479">
+<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create user scenario" time="0.462">
 <system-out><![CDATA[
 Given provide valid endpoint to create user.................................passed
 When I send the request to the server with requestbody......................passed
@@ -53,7 +53,7 @@ Then I validate the create user response status code........................pass
 And validate the create user response body fields...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create more users - Example #1.1" time="0.466">
+<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create more users - Example #1.1" time="0.429">
 <system-out><![CDATA[
 Given provide valid endpoint to create user.................................passed
 When I send the request to the server with requestbody as "morpheus" and "leader".passed
@@ -61,7 +61,7 @@ Then I validate the create user response status code........................pass
 And validate the create user response body fields...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create more users - Example #1.2" time="0.454">
+<testcase classname="Reqres Post Api to Create User feature" name="reqres post api to create more users - Example #1.2" time="0.429">
 <system-out><![CDATA[
 Given provide valid endpoint to create user.................................passed
 When I send the request to the server with requestbody as "Ramesh Ch" and "Automation Test Lead".passed
@@ -69,7 +69,7 @@ Then I validate the create user response status code........................pass
 And validate the create user response body fields...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reqres Put Api to update User feature" name="reqres post api to update user scenario" time="0.468">
+<testcase classname="Reqres Put Api to update User feature" name="reqres post api to update user scenario" time="0.416">
 <system-out><![CDATA[
 Given provide valid endpoint to update the user.............................passed
 When I send the request to the server with requestbody to update user.......passed
