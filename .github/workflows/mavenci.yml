@@ -35,3 +35,10 @@ jobs:
 
     - name: Run tests
       run: mvn test
+    - name: Build and push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: rameshdevops10/restapiautomation
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
