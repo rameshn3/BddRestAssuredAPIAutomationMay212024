@@ -10,8 +10,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 public class TestBase {
-
-
 	public static String getPropertyValue(String key) throws IOException {
 	    Properties prop = new Properties();
 	    try {
